@@ -35,15 +35,13 @@ def solve_smart_city(N, K, temperatures, queries):
     
     return results
 
-
-if __name__ == "__main__":
-    N, K, Q = 8, 3, 2
-    temp = [73, 74, 75, 71, 69, 72, 76, 73]
-    queries = [
-        ["NEXT", "3"],
-        ["COUNT", "0", "7"]
-    ]
+N, K, Q = 8, 3, 2
+temp = [73, 74, 75, 71, 69, 72, 76, 73]
+queries = [
+    ["NEXT", "3"],
+    ["COUNT", "0", "7"]
+]
     
-    results = solve_smart_city(N, K, temp, queries)
-    for r in results:
-        print(r)
+results = solve_smart_city(N, K, temp, queries)
+for r in results:
+    print(r)
